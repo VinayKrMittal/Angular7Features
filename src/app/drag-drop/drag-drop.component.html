@@ -1,0 +1,4 @@
+<h3 class="center">Drag Drop Angular..</h3>
+<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+    <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+  </div>
