@@ -5,8 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/virtual-scroll">Virtual Scroll</a>
-      <a class="nav-item nav-link" routerLink="/drag-drop" >Drag Drop</a>
+      <a class="nav-item nav-link" [routerLinkActive]="['active']" routerLink="/virtual-scroll">Virtual Scroll</a>
+      <a class="nav-item nav-link" [routerLinkActive]="['active']" routerLink="/drag-drop" >Drag Drop</a>
     </div>
   </div>
 </nav>
+<router-outlet></router-outlet>
+
